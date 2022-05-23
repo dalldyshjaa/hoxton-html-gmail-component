@@ -1,0 +1,45 @@
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.main-top-items {
+  position: sticky;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+.main__left-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px 20px;
+  place-items: center;
+}
+.main__right-items {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 0.8fr;
+  padding: 8px 20px;
+  padding-right: 8px;
+  place-items: center;
+}
+.emails {
+  border-top: 0.5px solid rgb(229, 229, 229);
+}
+.emails_email {
+  display: grid;
+  grid-template-columns: auto auto 1fr 4fr auto;
+  grid-template-rows: 30px;
+  gap: 5px;
+  border-bottom: 0.5px solid rgb(229, 229, 229);
+  padding: 10px 20px;
+  overflow: hidden;
+}
+.email-info {
+  display: inline-block;
+  padding-top: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  align-items: center;
+  white-space: nowrap;
+}
